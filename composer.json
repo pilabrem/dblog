@@ -9,14 +9,19 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "torann/geoip": "1.*"
+    },
     "extra": {
         "laravel": {
             "providers": [
-                "Pilabrem\\DBLog\\DBLogServiceProvider"
+                "Pilabrem\\DBLog\\DBLogServiceProvider",
+                "Torann\\GeoIP\\GeoIPServiceProvider"
+
             ],
             "aliases": {
-                
+                "DBLog": "Pilabrem\\DBLog\\Http\\Facades\\DBLog::class",
+                "GeoIP": "Torann\\GeoIP\\Facades\\GeoIP::class"
             }
         }
     }
