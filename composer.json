@@ -12,12 +12,16 @@
     "require": {
         "torann/geoip": "1.*"
     },
+    "autoload": {
+        "psr-4": {
+            "Pilabrem\\DBLog\\": "src/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
                 "Pilabrem\\DBLog\\DBLogServiceProvider",
                 "Torann\\GeoIP\\GeoIPServiceProvider"
-
             ],
             "aliases": {
                 "DBLog": "Pilabrem\\DBLog\\Http\\Facades\\DBLog::class",
