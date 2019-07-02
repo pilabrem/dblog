@@ -5,9 +5,6 @@ namespace Pilabrem\DBLog\http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Pilabrem\DBLog\Models\Log;
-use App\Models\User;
-use Illuminate\Support\Facades\Auth;
-use Pilabrem\DBLog\Http\Facades\DBLog;
 use Illuminate\Support\Facades\DB;
 use function GuzzleHttp\json_decode;
 

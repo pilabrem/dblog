@@ -26,6 +26,10 @@ class DBLogServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/Views' => resource_path('views/vendor/dblog'),
         ], 'views');
+
+        $this->publishes([
+            __DIR__.'/config/dblog.php' => config_path('dblog.php'),
+        ]);
     }
 
     /**

@@ -32,6 +32,7 @@ class ComposerStaticInit22d9004c7a6ffdb2823857f25c35df73
         array (
             'Psr\\SimpleCache\\' => 16,
             'Psr\\Container\\' => 14,
+            'Pilabrem\\DBLog\\' => 15,
         ),
         'I' => 
         array (
@@ -89,6 +90,10 @@ class ComposerStaticInit22d9004c7a6ffdb2823857f25c35df73
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'Pilabrem\\DBLog\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
         'Illuminate\\Support\\' => 
         array (

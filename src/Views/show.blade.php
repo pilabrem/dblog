@@ -16,8 +16,9 @@
                         <td>{{$log->message}}</td>
                     </tr>
                     <tr>
+                        <?php  $name = Config::get('dblog.user-attr', 'name') ?>
                         <td>Utilisateur</td>
-                        <td>{{App\Models\User::find($log->user_id)->name}}</td>
+                        <td>{{Config::get('dblog.user-model', 'App\\User')::find($log->user_id)->$name}}</td>
                     </tr>
                     <tr>
                         <td>Localisation</td>

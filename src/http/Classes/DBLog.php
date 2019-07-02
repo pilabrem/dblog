@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 class DBLog
 {
+
     /**
      * @param string $entity
      * @param string $action (create|read|update|delete)
@@ -22,7 +23,7 @@ class DBLog
         if (isset($loc->city)) {
             $location = $loc->city . ", " .$loc->country;
         }
-        
+
         $log = new Log();
         $log->user_id = Auth::id();
         $log->entity_id = $entity->id;

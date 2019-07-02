@@ -29,7 +29,7 @@
                 </tr>
                 @empty
                 <tr>
-                    <td colspan="6"><span>Aucune opération trouvé sur @env('app_name')</span></td>
+                    <td colspan="7"><span>Aucune opération trouvé sur @env('app_name')</span></td>
                 </tr>
                 @endforelse
             </tbody>
